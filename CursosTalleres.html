@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Taller Ultramar</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!--Fila de logo, idiomas y buscador-->
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="row align-items-center">
+                    <div class="col-sm-1.5">
+                        <img src="fotos/Chica rosa.jpg" width="60" height="80" class="d-inline-block align-top" alt="">
+                    </div>
+                    <div class="col-sm-10.5">
+                        <h1 class="display-4">TALLER ULTRAMAR</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c1dfe8;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Idioma
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Castellano</a>
+                                    <a class="dropdown-item" href="#">Inglés</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Otros</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button type="button" class="btn btn-info">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <!--Fila de menú desplegable tipo hamburguesa-->
+        <div class="row align-items-center">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Acerca de
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="Sobre_mi.html">Sobre mí</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="Proyecto.html">El proyecto</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    El taller
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="CursosTalleres.html">Cursos y talleres</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="CesionEspacios.html">Cesión de espacios</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <span class="navbar-text">
+                        ¡La Inspiración existe! Pero tiene que encontrarte trabajando (Pablo Picasso)
+                    </span>
+                </nav>
+            </div>
+        </div>
+
+
+        <!--Fila lista -->
+        <div class="row align-items-center py-3">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active list-group-item-info" id="list-home-list"
+                        data-toggle="list" href="#list-home" role="tab" aria-controls="home">Talleres</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" id="list-profile-list"
+                        data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Cursos</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
+                        <h4 id="list-item-1">Talleres de fin de semana</h4>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Técnica</th>
+                                    <th scope="col">Profesor invitado</th>
+                                    <th scope="col">Fechas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Retrato en Acuarela</td>
+                                    <td>Alejandro Casanova</td>
+                                    <td>6-8 marzo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Realismo y grafito</td>
+                                    <td>Alberto Solé</td>
+                                    <td>17-19 abril</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Acuarela y digital</td>
+                                    <td>Ana Santos</td>
+                                    <td>8-10 mayo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <h4 id="list-item-2">Cursos anuales</h4>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Técnica</th>
+                                    <th scope="col">Número de alumnos</th>
+                                    <th scope="col">Horarios</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Acuarela</td>
+                                    <td>10 alumnos</td>
+                                    <td>Lunes 19-21h</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Grafito</td>
+                                    <td>20 alumnos</td>
+                                    <td>Miércoles 19-21h</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Acrílico</td>
+                                    <td>10 alumnos</td>
+                                    <td>Viernes 19-21h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4 mt-md-0 mt-3 py-3" style="background-color:#c1dfe8;">
+                    <h6 class="text-uppercase font-weight-bold">¿Quién está detrás?</h6>
+                    <p>Marta Melero Frago</p>
+                    <p>marta@tallerultramar.com</p>
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-4 mb-md-0 mb-3 py-3" style="background-color:#c1dfe8;">
+
+                    <h6 class="text-uppercase font-weight-bold">¿Quieres hacer prácticas aquí?</h6>
+                    <p>Escríbenos a:</p>
+                    <p>practicas@tallerultramar.com</p>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-3 py-3" style="background-color:#c1dfe8;">
+                    <h6 class="text-uppercase font-weight-bold">Síguenos en RRSS</h6>
+                    <p> <img src="fotos/insta.jfif" width="30" height="30" alt="">
+                        @taller_ultramar</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-2 text-white" style="background-color:#003333;">
+            © 2020 Copyright: Taller Ultramar
+        </div>
+        <!-- Copyright -->
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
