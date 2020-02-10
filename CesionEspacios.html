@@ -61,7 +61,7 @@
                 </nav>
             </div>
         </div>
-        <!--Fila de menú desplegable tipo hamburguesa-->
+
         <!--Fila de menú desplegable tipo hamburguesa-->
         <div class="row align-items-center">
             <div class="col">
@@ -111,31 +111,122 @@
             </div>
         </div>
 
+        <div class="row align-items-center py-2">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="Index.html">Home</a></li>
+                        <li class="breadcrumb-item">El taller</li>
+                        <li class="breadcrumb-item active" aria-current="page">Cesión de espacios</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
 
         <!--Fila lista -->
         <div class="row align-items-center">
-            <h2 class="display-4">El taller </h2>
-        </div>
-        <div class="row align-items-center">
-            <p class="text-muted"> Espacios disponibles y porcentaje global de ocupación del taller. </p>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-sm-6 py-2">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Espacios propios</li>
-                    <li class="list-group-item">Espacio compartido</li>
-                    <li class="list-group-item">Almacenamiento de obra</li>
-                    <li class="list-group-item">Tórculo y material de grabado</li>
-                </ul>
+            <div class="col py-2">
+                <h2 class="display-4">El taller </h2>
+                <p class="text-muted"> Espacios disponibles y porcentaje global de ocupación actual del taller. </p>
             </div>
-            <div class="col-sm-6">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 65%"
-                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="10"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-4 py-2">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active list-group-item-info" id="list-home-list"
+                        data-toggle="list" href="#list-home" role="tab" aria-controls="home">Tórculo de grabado</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" id="list-profile-list"
+                        data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Sala común</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" id="list-messages-list"
+                        data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Estudios
+                        individuales</a>
+                </div>
+            </div>
+            <div class="col-8 py-2">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
+
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="row align-items-center">
+            <div class="col py-2">
+                <h3>Solicita nuestras instalaciones</h3>
+                <p class="text-muted"> Consulta qué instalaciones están disponibles. La reserva de espacios es
+                    semanal. </p>
+
+                <form>
+                    <div class="form-group col-md-4">
+                        <label for="exampleInputEmail1">Tu dirección email:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                    </div>
+                    <label for="exampleInputEmail1">Selecciona qué instalaciones deseas reservar:</label>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Tórculo de grabado</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                        <label class="form-check-label" for="exampleCheck2">Sala común</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                        <label class="form-check-label" for="exampleCheck3">Salas individuales</label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Mes</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Enero</option>
+                            <option selected>Febrero</option>
+                            <option selected>Marzo</option>
+                            <option selected>Abril</option>
+                            <option selected>Mayo</option>
+                            <option selected>Junio</option>
+                            <option selected>Julio</option>
+                            <option selected>Agosto</option>
+                            <option selected>Septiembre</option>
+                            <option selected>Octubre</option>
+                            <option selected>Noviembre</option>
+                            <option selected>Diciembre</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Semana</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Semana 1</option>
+                            <option selected>Semana 2</option>
+                            <option selected>Semana 3</option>
+                            <option selected>Semana 4</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="right"
+                        title="Gracias por consultar">
+                        Solicitar
+                    </button>
+
+                </form>
+            </div>
+        </div>
 
 
         <!-- Footer Text -->
